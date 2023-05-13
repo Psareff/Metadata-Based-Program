@@ -1,5 +1,12 @@
-﻿0 file 0 -
-1 save 0 saveHandler
-1 close 0 -
-2 closeAndSave 0 closeAndSaveHandler
-0 edit 0 -
+﻿0 Разное 0 Others
+0 Сотрудники 0 Staff
+0 Приказы 0 Orders
+0 Документы 0 Docs
+0 Справочники 0 
+1 Отделы 0 Departs
+1 Города 0 Towns
+1 Должности 0 Posts
+0 Окно 0 Window
+0 Справка 0 
+1 Оглавление 1 Content
+1 О программе 2 About

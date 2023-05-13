@@ -1,64 +1,56 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Diagnostics;
+using System.Windows;
+using System.Windows.Forms;
 
 
 namespace Metadata
 {
     internal class Delegates
     {
-        public void fileHandler()
-            => Trace.WriteLine("File clicked");
-
-        public void saveHandler()
-            => Trace.WriteLine("Save clicked");
-
-        public void closeHandler()
-            => Trace.WriteLine("Close clicked");
-
-        public void closeAndSaveHandler()
-            => Trace.WriteLine("Close and save clicked");
-
-        public void editHandler()
-            => Trace.WriteLine("Edit clicked");
-
-        public void undoHandler()
-            => Trace.WriteLine("Undo clicked");
-
-        public void redoHandler()
-            => Trace.WriteLine("Redo clicked");
-
-        public void replaceHandler()
-            => Trace.WriteLine("Replace clicked");
+        public void Others()
+            => System.Windows.MessageBox.Show("Others clicked");
+        public void Staff()
+            => System.Windows.MessageBox.Show("Staff clicked");
+        public void Orders()
+            => System.Windows.MessageBox.Show("Orders clicked");
+        public void Docs()
+            => System.Windows.MessageBox.Show("Docs clicked");
+        public void Departs()
+            => System.Windows.MessageBox.Show("Departs clicked");
+        public void Towns()
+            => System.Windows.MessageBox.Show("Towns clicked");
+        public void Posts()
+            => System.Windows.MessageBox.Show("Posts clicked");
+        public void Window()
+            => System.Windows.MessageBox.Show("Window clicked");
+        public void Help()
+            => System.Windows.MessageBox.Show("Help clicked");
+        public void Content()
+            => System.Windows.MessageBox.Show("Content clicked");
+        public void About()
+            => System.Windows.MessageBox.Show("About clicked");
 
         public Delegates()
         {
-            calls.Add("fileHandler", fileHandler);
-            calls.Add("saveHandler", saveHandler);
-            calls.Add("closeHandler", closeHandler);
-            calls.Add("closeAndSaveHandler", closeAndSaveHandler);
-            calls.Add("editHandler", editHandler);
-            calls.Add("undoHandler", undoHandler);
-            calls.Add("redoHandler", redoHandler);
-            calls.Add("replaceHandler", replaceHandler);
+            calls.Add("Others", Others);
+            calls.Add("Staff", Staff);
+            calls.Add("Orders", Orders);
+            calls.Add("Docs", Docs);
+            calls.Add("Departs", Departs);
+            calls.Add("Towns", Towns);
+            calls.Add("Posts", Posts);
+            calls.Add("Window", Window);
+            calls.Add("Help", Help);
+            calls.Add("Content", Content);
+            calls.Add("About", About);
         }
         Dictionary<string, Delegate> calls = new Dictionary<string, Delegate>();
 
         public void callDelegate(string name)
         {
-            if (name != "-")
+            if (name != "")
                 calls[name].DynamicInvoke();
             return;
         }

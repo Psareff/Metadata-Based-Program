@@ -1,22 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Globalization;
-using System.Windows.Forms;
-using System.Runtime.CompilerServices;
-using System.IO;
-using System.Windows.Automation;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Windows;
+using System.Windows.Forms;
 
 
 namespace Metadata
@@ -30,6 +16,7 @@ namespace Metadata
         public Authorization()
         {
             StreamReader streamReader = new StreamReader("../../../Logins.txt");
+
             string row;
 
             while ((row = streamReader.ReadLine()) != null)
@@ -46,19 +33,19 @@ namespace Metadata
             }
 
 
-            CultureInfo ci = CultureInfo.InstalledUICulture;
             InitializeComponent();
-            
-            Language.Text = "Current language: " + CultureInfo.CurrentUICulture.Name;
+            DataContext = this;
+
+            Language.Text = "Current language: " + InputLanguage.CurrentInputLanguage.LayoutName;
             Caps.Text = "Caps Lock is " + (System.Windows.Forms.Control.IsKeyLocked(Keys.CapsLock) ? "On" : "Off");
         }
 
         private void Ok_Click(object sender, RoutedEventArgs e)
         {
 
-            foreach(var i in users)
+            foreach (var i in users)
             {
-                if (i.username == Name_Field.Text && 
+                if (i.username == Name_Field.Text &&
                     i.password == Password_Field.Text)
                 {
                     MainWindow mainWindow = new MainWindow(i.filename);
@@ -67,5 +54,6 @@ namespace Metadata
                 }
             }
         }
+
     }
 }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         ResizeMode="NoResize"
         Title="Authorization" Height="300" Width="400" Background="#99CCFF">
-    <Grid Name="MainGrid">
+    <Grid Name="MainGrids">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
