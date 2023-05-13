@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows;
-using System.Windows.Forms;
 
 
-namespace Metadata
+namespace MenuElement
 {
-    internal class Delegates
+    public class Delegates
     {
         public void Others()
             => System.Windows.MessageBox.Show("File clicked");

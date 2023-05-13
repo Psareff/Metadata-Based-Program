@@ -3,16 +3,17 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Forms;
+using MenuElement;
 
 
-namespace Metadata
+namespace MetadataDLL
 {
     /// <summary>
     /// Interaction logic for Authorization.xaml
     /// </summary>
     public partial class Authorization : Window
     {
-        List<User> users = new List<User>();
+        List<MenuElement.User> users = new List<User>();
         public Authorization()
         {
             StreamReader streamReader = new StreamReader("../../../Logins.txt");
@@ -32,7 +33,6 @@ namespace Metadata
                 });
             }
 
-
             InitializeComponent();
             DataContext = this;
 
@@ -41,7 +41,7 @@ namespace Metadata
         }
 
         private void Ok_Click(object sender, RoutedEventArgs e)
-        {
+        { 
 
             foreach (var i in users)
             {

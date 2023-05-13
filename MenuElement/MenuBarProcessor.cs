@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Metadata
+namespace MenuElement
 {
-    internal class MenuBarProcessor
+    public class MenuBarProcessor
     {
         MenuBarParser menuBarParser;
         

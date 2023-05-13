@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	  <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bunch-of-keys-1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MenuElement">
+      <HintPath>..\MenuElement\bin\Debug\net6.0-windows\MenuElement.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bunch-of-keys-1.png" />
+  </ItemGroup>
+
+</Project>

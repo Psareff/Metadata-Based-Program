@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metadata", "Metadata\Metadata.csproj", "{F8A6EDA8-DDE2-44BD-A003-0B739F63FCC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metadata", "Metadata\Metadata.csproj", "{F8A6EDA8-DDE2-44BD-A003-0B739F63FCC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuElement", "MenuElement\MenuElement.csproj", "{A9B2FF39-3476-4DF5-AC5F-BA7BBD525C11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataDLL", "MetadataDLL\MetadataDLL.csproj", "{CE602DAC-D4BC-43A5-8BAA-B604E36F4AFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{F8A6EDA8-DDE2-44BD-A003-0B739F63FCC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8A6EDA8-DDE2-44BD-A003-0B739F63FCC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8A6EDA8-DDE2-44BD-A003-0B739F63FCC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9B2FF39-3476-4DF5-AC5F-BA7BBD525C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9B2FF39-3476-4DF5-AC5F-BA7BBD525C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9B2FF39-3476-4DF5-AC5F-BA7BBD525C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9B2FF39-3476-4DF5-AC5F-BA7BBD525C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE602DAC-D4BC-43A5-8BAA-B604E36F4AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE602DAC-D4BC-43A5-8BAA-B604E36F4AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE602DAC-D4BC-43A5-8BAA-B604E36F4AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE602DAC-D4BC-43A5-8BAA-B604E36F4AFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

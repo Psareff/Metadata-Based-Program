@@ -51,10 +51,8 @@ namespace Metadata
                     MainWindow mainWindow = new MainWindow(i.filename);
                     this.Close();
                     mainWindow.Show();
-                    return;
                 }
             }
-            System.Windows.MessageBox.Show("Invalid login or password");
         }
 
     }
