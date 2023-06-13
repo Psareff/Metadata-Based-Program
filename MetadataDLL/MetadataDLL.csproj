@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="MenuElement">
-      <HintPath>..\MenuElement\bin\Debug\net6.0-windows\MenuElement.dll</HintPath>
+    <Reference Include="MenuProcessor">
+      <HintPath>..\MenuElement\bin\Debug\net6.0-windows\MenuProcessor.dll</HintPath>
     </Reference>
   </ItemGroup>
 

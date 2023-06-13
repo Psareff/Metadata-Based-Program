@@ -26,7 +26,7 @@ namespace MetadataDLLimplicit
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow(string filename)
+        public MainWindow()
         {
       
             Assembly a = Assembly.LoadFrom("C:\\Users\\ilyap\\source\\repos\\Psareff\\Metadata-Based-Program\\MenuElement\\bin\\Debug\\net6.0-windows\\MenuElement.dll");
@@ -36,7 +36,7 @@ namespace MetadataDLLimplicit
             Type menuBarProcessor_t = a.GetType("Metadata.menuBarProcessor");
             Type user_t = a.GetType("Metadata.User");
 
-            object ctor_params = "../../../" + filename;
+            object ctor_params = "../../../" + "ToParse1.txt";
 
             var menuBarParser = Activator.CreateInstance(menuBarParser_t, ctor_params);
 

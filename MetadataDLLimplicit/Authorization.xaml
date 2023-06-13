@@ -8,6 +8,7 @@
         ResizeMode="NoResize"
         Title="Authorization" Height="300" Width="400" Background="#99CCFF">
     <Grid Name="MainGrids">
+        <!--
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -62,6 +63,6 @@
             <TextBlock Margin="25,0,25,0" Name="Caps" Grid.Row="3" Grid.Column="1" TextAlignment="Right">Caps</TextBlock>
         </Grid>
 
-
+-->
     </Grid>
 </Window>

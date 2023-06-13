@@ -5,7 +5,6 @@ using System.IO;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Forms;
-using MenuElement;
 
 
 namespace MetadataDLLimplicit
@@ -18,8 +17,8 @@ namespace MetadataDLLimplicit
         public Authorization()
         {
             Assembly a = Assembly.LoadFrom("C:\\Users\\ilyap\\source\\repos\\Psareff\\Metadata-Based-Program\\MenuElement\\bin\\Debug\\net6.0-windows\\MenuElement.dll");
-            Type menuelement_t = a.GetType("Metadata.MenuElement");
-            List<menuelement_t.User> users = new List<User>();
+            Type user = a.GetType("Metadata.User");
+            List<user> users = new List<User>();
             StreamReader streamReader = new StreamReader("../../../Logins.txt");
 
             string row;
